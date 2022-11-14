@@ -1,0 +1,203 @@
+:root {
+  --FontRusso-One: 'Russo One', sans-serif;
+  --FontSpace-Mono: 'Space Mono', monospace;
+  --primary-color: #87b5b5;
+  --secondary-color: #1d2f2f;
+  --third-color: #4aa3a3;
+  --fourth-color: #c0d8d8;
+  --fifth-color: #57E2B1;
+  --sixth-color: #588080;
+  --seventh-color: #224b4b;
+  --eight-color: #ffffff;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: auto;
+}
+
+/*Editor container*/
+.container .editor-container {
+  width: auto;
+  position: relative;
+  box-sizing: border-box;
+  margin-top: 1rem;
+  /*margin-bottom: .5rem; To-do, maybe u just put it in jsx when the editor container
+  extends then it should have margin at button.*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: solid .5px var(--secondary-color);
+  box-shadow: .4rem .2rem .4rem rgba(0, 0, 0, 0.2), -.4rem .4rem 0.4rem rgba(0, 0, 0, 0.2);
+}
+
+.container .editor-container .header-editor {
+  background-color: var(--third-color);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-weight: 400;
+  font-family: var(--FontRusso-One);
+  font-size: 1rem;
+}
+
+.container .editor-container .header-editor .editor-icon {
+  padding: .5rem .5rem .5rem .8rem;
+  /*top*/ /*left*/ /*bottom*/ /*right*/
+  font-size: 1.3rem;
+}
+
+.container .editor-container .header-editor .editor-close-icon {
+  margin-left: auto;
+  align-self: center;
+  padding: .5rem 1rem .5rem .8rem;
+}
+
+.container .editor-container .header-editor .editor-close-icon:hover {
+  cursor: pointer;
+  color: var(--fifth-color);
+}
+
+.container .editor-container .body-editor {
+  background-color: var(--fourth-color);
+  font-style: var(--FontSpace-Mono);
+  border-top-width: .5px;
+  border-color: var(--secondary-color);
+  border-style: solid;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  resize: vertical;
+  outline: none;
+  padding: .5rem .5rem;
+}
+/*ends here/
+
+/*Preview container*/
+.container .preview-container {
+  width: auto;
+  position: relative;
+  box-sizing: border-box;
+  margin-top: 1rem;
+  display: flex;
+  margin: 1rem 18rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: solid .5px var(--secondary-color);
+  box-shadow: .4rem .2rem .4rem rgba(0, 0, 0, 0.2), -.4rem .4rem 0.4rem rgba(0, 0, 0, 0.2);
+}
+
+.container .preview-container .header-preview {
+  background-color: var(--third-color);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-weight: 400;
+  font-family: var(--FontRusso-One);
+  font-size: 1rem;
+
+}
+
+.container .preview-container .header-preview .preview-icon {
+  padding: .5rem .5rem .5rem .8rem;
+  /*top*/ /*left*/ /*bottom*/ /*right*/
+  font-size: 1.3rem;
+}
+
+.container .preview-container .header-preview .preview-close-icon {
+  margin-left: auto;
+  align-self: center;
+  padding: .5rem 1rem .5rem .8rem;
+}
+
+.container .preview-container .header-preview .preview-close-icon:hover {
+  cursor: pointer;
+  color: var(--fifth-color);
+}
+
+.container .preview-container .body-preview {
+  background-color: var(--fourth-color);
+  font-style: var(--FontSpace-Mono);
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  word-break: break-all;
+  border-top-width: .5px;
+  border-color: var(--secondary-color);
+  border-style: solid;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+}
+
+.container .preview-container .body-preview .markdownPreviewer {
+  margin-top: 0;
+  width: auto;
+  height: auto;
+  padding: .5rem 1rem;
+  position: relative;
+  font-size: 1rem;
+  object-fit: cover;
+  width: auto;
+  height: auto;
+}
+/*ends here*/
+
+/*To-do headers put some lines there*/
+
+body h1 {
+  border-bottom: 3px solid var(--seventh-color);
+  width: 100%
+}
+
+body h2 {
+  border-bottom: 2px solid var(--seventh-color);
+  width: 100%;
+}
+
+body table {
+  border-collapse: collapse;
+}
+
+body pre {
+  background-color: var(--eight-color);
+  padding: .5rem;
+}
+
+body code {
+  background-color: var(--eight-color);
+}
+
+body blockquote {
+  border-left: 3px solid var(--seventh-color);
+  padding: 0 0 0 .2rem;
+}
+
+body table th, td {
+  border: 2px solid var(--seventh-color);
+  padding: .3rem;
+}
+
+body img {
+  width: 90%;
+  height: 100%;
+}
