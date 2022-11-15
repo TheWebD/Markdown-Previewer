@@ -82,6 +82,9 @@ body {
   resize: vertical;
   outline: none;
   padding: .5rem .5rem;
+  position: relative;
+  width: auto;
+  height: auto;
 }
 /*ends here/
 
@@ -200,4 +203,39 @@ body table th, td {
 body img {
   width: 90%;
   height: 100%;
+}
+
+@media screen and (max-width: 600px){
+  .container .editor-container {
+    width: 80%;
+  }
+
+  .container .editor-container .header-editor {
+    width: 100%;
+  }
+
+  .container .editor-container .body-editor {
+    width: 95.5%;
+  }
+
+  .container .preview-container {
+    width: 80%;
+  }
+
+  .container .preview-container .header-preview {
+    width: 100%;
+  }
+
+  .container .preview-container .body-preview {
+    width: 100%;
+  }
+
+  .container .preview-container .body-preview .markdownPreviewer {
+    width: 90%;
+  }
+
+  body code {
+    font-size: .8rem;
+  }
+  
 }
